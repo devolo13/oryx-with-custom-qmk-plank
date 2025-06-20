@@ -143,10 +143,10 @@ bool led_update_user(led_t led_state) {
     if (led_state.caps_lock) {
         // Set the desired LED (e.g., Caps Lock key's LED) to red when Caps Lock is on
         // customized color code to match rest of LEDs
-        rgb_matrix_set_color(39, 152,255,255); // Replace CAPS_LOCK_LED_INDEX with the actual index
+        rgb_matrix_set_color(3, 152,255,255); // Replace CAPS_LOCK_LED_INDEX with the actual index
     } else {
         // Set the LED to a different color (e.g., white or off) when Caps Lock is off
-        rgb_matrix_set_color(39, 0xFF, 0xFF, 0xFF); // White
+        rgb_matrix_set_color(3, 0xFF, 0xFF, 0xFF); // White
         // or
         // rgb_matrix_set_color(CAPS_LOCK_LED_INDEX, 0x00, 0x00, 0x00); // Off
     }
